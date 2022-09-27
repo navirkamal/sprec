@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200&display=swap');
+*{
+    margin: 0;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+img.logo{
+    width: 100px;
+}
+ul.nav1, ul.nav2{
+    display: flex;
+    justify-content: space-between;
+}
+nav li{
+    list-style-type: none;
+    padding: 0 20px;
+}
+nav li a {
+    text-decoration: none;
+    color: #777879;
+    font-family: 'Kanit', sans-serif;
+    transition: 0.3s;
+}
+nav li a:hover{
+    color: black;
+}
+section.imagetext{
+    position: relative;
+}
+img.mainimage{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+}
+div.textoverimage{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+a.aboutus{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-decoration: none;
+    border: #181818 3px solid;
+    padding: 0px 10px;
+    border-radius: 50px;
+    transition: .2s;
+}
+a.aboutus:hover{
+  background-color: #181818;
+}
+@media (max-width:770px){
+  /* a.aboutus{
+    transform: scale(.8);
+    left: 45%;
+  } */
+  div.textoverimage{
+  font-size: 2em;
+  }
+}
+div.secondbody {
+    font-family: 'Kanit', sans-serif;
+    text-align: center;
+    padding: 70px;
+    color: #323232;
+    font-weight: 300;
+    line-height: 1.9;
+    background-color: rgb(238, 238, 238);
+}
+div h2{
+color: #323232;
+font-weight: 300;
+font-size: 2em;
+}
+hr{
+    margin: 40px 320px;
+}
+section.folio{
+display: flex;
+flex-wrap: wrap;
+position: relative;
+}
+article.card1, article.card2, article.card3, article.card4{
+    width: 50%;
+    height: 300px;
+    text-align: center;
+    background-size: cover;
+    font-family: 'Kanit', sans-serif;
+    vertical-align: middle;
+    opacity: .7;
+    transition: .3s;
+    font-size: 1.3em;
+}
+article.card1{
+    background-image: url(images/1.jpg);
+}
+article.card2{
+    background-image: url(images/2.jpg);
+}
+article.card3{
+    background-image: url(images/3.jpg);
+}
+article.card4{
+    background-image: url(images/4.jpg);
+}
+@media (max-width:770px){
+    article.card1, article.card2, article.card3, article.card4 {
+        width: 100%;
+        opacity: 1;
+    }
+}
+a.cardlink1, a.cardlink2, a.cardlink3, a.cardlink4{
+text-decoration: none;
+color: white;
+padding: 140px 0;
+text-align: center;
+display: inline-block;
+opacity: 2;
+}
+article.card1:hover, article.card2:hover, article.card3:hover, article.card4:hover{
+    opacity: 1;
+}
+a.moreprojects{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+    padding: 30px 0;
+    background-color: #1b1b1b;
+    color: aliceblue;
+    font-family: 'Kanit', sans-serif;
+    transition: .3s;
+}
+a.moreprojects:hover{
+    background-color: rgb(17, 17, 17);
+}
+img.mondialite{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: top;
+    opacity: .7;
+    transition: .3s;
+}
+@media (max-width:770px){
+  img.mondialite{
+    opacity: 1;
+  }
+}
+img.mondialite:hover{
+    opacity: 1;
+}
+section.mondialite{
+    position: relative;
+}
+section.mondialite div{
+position: absolute;
+bottom: 120px;
+width: 100%;
+text-align: center;color: aliceblue;
+font-family: 'Kanit', sans-serif;
+font-size: 1.3em;
+}
+div.secondbodyh2 {
+    font-size: 1.5em;
+}
+div.end{
+  box-sizing: border-box;
+  text-align: center;
+  padding: 100px 0;
+  background-color: #181818;
+  color: gray;
+  font-family: Arial, Helvetica, sans-serif;
+}
